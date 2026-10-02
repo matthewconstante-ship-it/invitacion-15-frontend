@@ -158,7 +158,7 @@ const Location = () => {
                 <Typography sx={{ fontFamily: '"Anton", sans-serif', fontSize: '0.95rem', letterSpacing: '1px', lineHeight: 1 }}>CANCHA</Typography>
               </Box>
             </Box>
-          </Box>
+          </Box>g
 
           <Box sx={{ ...sketchyBox, backgroundColor: paperCream, p: 3, mb: 4, width: '100%', maxWidth: '420px', position: 'relative', zIndex: 2, transform: 'rotate(1deg)' }}>
             <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: `2px dashed ${markerBlack}`, pb: 1, mb: 2 }}>
