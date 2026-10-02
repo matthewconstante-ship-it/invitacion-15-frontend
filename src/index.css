@@ -1,0 +1,21 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  background-color: #1A1A1A;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; /* Evita el cuadro azul feo al tocar botones en móviles */
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Nota: El ruido global fue eliminado porque cada componente ahora 
+   gestiona su propia textura SVG para evitar superposiciones y suciedad visual. */
