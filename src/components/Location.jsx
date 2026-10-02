@@ -138,7 +138,7 @@ const Location = () => {
               
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.6, flexShrink: 0, zIndex: 3 }}>
                 <Box sx={{ width: '8px', height: '8px', backgroundColor: markerBlack, borderRadius: '50%', filter: 'url(#roughMarker)' }} />
-                <Typography sx={{ fontFamily: '"Inter", sans-serif', fontWeight: 900, fontSize: '0.72rem', color: markerBlack, letterSpacing: '1px' }}>SEDE OFICIAL CORDENADAS</Typography>
+                <Typography sx={{ fontFamily: '"Inter", sans-serif', fontWeight: 900, fontSize: '0.72rem', color: markerBlack, letterSpacing: '1px' }}>SEDE OFICIAL </Typography>
               </Box>
 
               <Box sx={{ flex: 1, position: 'relative', height: '100%', display: 'flex', alignItems: 'center', overflow: 'visible', mx: 1 }}>

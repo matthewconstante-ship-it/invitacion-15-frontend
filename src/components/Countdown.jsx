@@ -150,7 +150,7 @@ export default function Countdown() {
               
               <Box sx={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 3, borderTop: `2px dashed ${markerBlack}`, pt: 1 }}>
                 <Typography sx={{ fontFamily: '"Inter", sans-serif', fontStyle: 'italic', fontWeight: 900, fontSize: '0.85rem', color: markerBlack, textTransform: 'uppercase', letterSpacing: '1px' }}>¡Empieza la fiesta!</Typography>
-                <Typography sx={{ fontFamily: '"Inter", sans-serif', fontWeight: 900, fontSize: '0.85rem', color: markerBlack }}>20:00 HS</Typography>
+                <Typography sx={{ fontFamily: '"Inter", sans-serif', fontWeight: 900, fontSize: '0.85rem', color: markerBlack }}>14:00 HS</Typography>
               </Box>
             </Box>
 

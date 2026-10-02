@@ -297,7 +297,7 @@ const Hero = () => {
             <Box sx={{ width: '3px', height: '32px', backgroundColor: pink15, filter: 'url(#roughMarker)' }} />
             
             <Typography sx={{ fontFamily: '"Inter", sans-serif', fontWeight: 900, fontSize: '1.1rem', color: markerBlack }}>
-              20 HS
+              14 HS
             </Typography>
           </Box>
 
