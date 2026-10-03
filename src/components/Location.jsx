@@ -167,7 +167,7 @@ const Location = () => {
             </Box>
             <Typography sx={{ fontFamily: '"Anton", sans-serif', fontSize: '1.5rem', color: markerBlack, textTransform: 'uppercase', lineHeight: 1.1, mb: 1.5 }}>¡TE ESPERO PARA CELEBRAR JUNTOS!</Typography>
             <Typography sx={{ fontFamily: '"Inter", sans-serif', fontWeight: 600, fontSize: '0.9rem', color: '#444', lineHeight: 1.5 }}>
-              Abre el mapa para conocer la ruta directa a la celebración. Llega puntual para no perderte el pitazo inicial de esta gran noche.
+              Abre el mapa para conocer la ruta directa a la celebración. Llega puntual para no perderte el pitazo inicial de este gran día.
             </Typography>
           </Box>
 

@@ -88,7 +88,7 @@ const Itinerary = () => {
       id: 'panel2', 
       time: 'PRIMER TIEMPO', 
       title: 'El Silbatazo Inicial y Protocolo Oficial ⚽',
-      subtitle: '¡Arranca el partido! Damos inicio formal con la gran entrada de la capitana de la noche, su corte de honor y los momentos más emotivos de la ceremonia.',
+      subtitle: '¡Arranca el partido! Damos inicio formal con la gran entrada de la capitana, su corte de honor y los momentos más emotivos de la ceremonia.',
     },
     {
       id: 'panel3', 

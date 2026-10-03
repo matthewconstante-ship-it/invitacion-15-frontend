@@ -234,7 +234,7 @@ const Details = () => {
                 </Typography>
                 <Button 
                   variant="contained" 
-                  href="https://pin.it/7ncdgfpMe" 
+                  href="https://pin.it/4cftM8aeb" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   fullWidth 

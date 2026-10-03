@@ -1,3 +1,4 @@
+import { useState, useRef } from 'react';
 import { Box, GlobalStyles } from '@mui/material';
 import Hero from './components/Hero';
 import Ticker from './components/Ticker';
@@ -45,6 +46,18 @@ function App() {
   const black = '#1A1A1A';
   const bgCream = '#F3F1EC';
 
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef(null);
+
+  const togglePlay = () => {
+    if (isPlaying) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
+
   return (
     <>
       <GlobalStyles styles={{ body: { backgroundColor: black, margin: 0, padding: 0 } }} />
@@ -52,7 +65,7 @@ function App() {
         sx={{
           minHeight: '100vh',
           width: '100vw',
-          backgroundColor: black, // Fondo global oscuro para PC
+          backgroundColor: black, 
           display: 'flex',
           justifyContent: 'center',
           overflowX: 'hidden',
@@ -63,13 +76,13 @@ function App() {
         <Box
           sx={{
             width: '100%',
-            maxWidth: '480px', // Ancho perfecto para simular pantalla de celular
+            maxWidth: '480px', 
             minHeight: '100vh',
             display: 'flex',
             flexDirection: 'column',
             position: 'relative',
             backgroundColor: bgCream,
-            boxShadow: { xs: 'none', sm: '0px 0px 50px rgba(0,0,0,0.6)' }, // Sombra en PC
+            boxShadow: { xs: 'none', sm: '0px 0px 50px rgba(0,0,0,0.6)' }, 
             overflow: 'hidden'
           }}
         >
@@ -103,6 +116,52 @@ function App() {
             <Ticker customPhrases={tickerPhrases.photoToFooter} />
 
           </Box>
+
+          {/* CAJA FANTASMA PARA MANTENER EL BOTÓN DENTRO DE LOS 480PX */}
+          <Box
+            sx={{
+              position: 'fixed',
+              bottom: 0,
+              width: '100%',
+              maxWidth: '480px',
+              height: '100px',
+              pointerEvents: 'none', // Permite hacer scroll a través de la caja invisible
+              zIndex: 9999,
+              display: 'flex',
+              justifyContent: 'flex-end',
+              alignItems: 'flex-end',
+              padding: '0 25px 25px 0'
+            }}
+          >
+            <button
+              onClick={togglePlay}
+              style={{
+                pointerEvents: 'auto', // Reactiva los clics solo para el botón
+                background: 'rgba(26, 26, 26, 0.75)', // Tono oscuro (#1A1A1A) translúcido
+                backdropFilter: 'blur(10px)',
+                WebkitBackdropFilter: 'blur(10px)',
+                border: '1px solid rgba(243, 241, 236, 0.2)', // Borde sutil color bgCream
+                borderRadius: '50%',
+                width: '55px',
+                height: '55px',
+                color: '#F3F1EC',
+                cursor: 'pointer',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                fontSize: '22px',
+                boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)',
+                transition: 'transform 0.2s ease-in-out',
+              }}
+              onMouseDown={(e) => e.currentTarget.style.transform = 'scale(0.9)'}
+              onMouseUp={(e) => e.currentTarget.style.transform = 'scale(1)'}
+              onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+            >
+              {isPlaying ? '⏸️' : '🎵'}
+            </button>
+          </Box>
+
+          <audio ref={audioRef} src="/anahy.mp3" loop />
         </Box>
       </Box>
     </>

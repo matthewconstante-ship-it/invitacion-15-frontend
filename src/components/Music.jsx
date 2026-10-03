@@ -170,7 +170,7 @@ const Music = () => {
               <AnimatedEqualizerSvg />
               <Box>
                 <Typography sx={{ fontFamily: '"Inter", sans-serif', fontWeight: 900, fontSize: '0.75rem', letterSpacing: '1px', textTransform: 'uppercase', color: markerBlack, lineHeight: 1.1 }}>Sistema de Audio Mis 15</Typography>
-                <Typography sx={{ fontFamily: '"Inter", sans-serif', fontWeight: 700, fontSize: '0.65rem', letterSpacing: '0.5px', color: pink15 }}>¿Qué tema debe sonar sí o sí en la fiesta?</Typography>
+                <Typography sx={{ fontFamily: '"Inter", sans-serif', fontWeight: 700, fontSize: '0.65rem', letterSpacing: '0.5px', color: pink15 }}>¿Qué tema debe sonar sí o sí?</Typography>
               </Box>
             </Box>
 
@@ -182,7 +182,7 @@ const Music = () => {
                 </Box>
                 <Box>
                   <Typography sx={{ fontFamily: '"Inter", sans-serif', fontWeight: 900, fontSize: '0.8rem', mb: 1, textTransform: 'uppercase', letterSpacing: '0.5px', color: markerBlack }}>Título de Canción / Artista *</Typography>
-                  <TextField required fullWidth value={song} onChange={(e) => setSong(e.target.value)} placeholder="EJ. KAROL G, BAD BUNNY..." variant="outlined" sx={{ backgroundColor: '#FFF', '& .MuiOutlinedInput-root': { borderRadius: '5px', fontFamily: '"Inter", sans-serif', fontWeight: 700, fontSize: '0.95rem', color: markerBlack, '& fieldset': { border: `2px solid ${markerBlack}`, filter: 'url(#roughMarker)' }, '&:hover fieldset': { border: `2px solid ${markerBlack}` }, '&.Mui-focused fieldset': { border: `2.5px solid ${pink15}` } } }} />
+                  <TextField required fullWidth value={song} onChange={(e) => setSong(e.target.value)} placeholder="EJ. Yoko/Alvaro Diaz..." variant="outlined" sx={{ backgroundColor: '#FFF', '& .MuiOutlinedInput-root': { borderRadius: '5px', fontFamily: '"Inter", sans-serif', fontWeight: 700, fontSize: '0.95rem', color: markerBlack, '& fieldset': { border: `2px solid ${markerBlack}`, filter: 'url(#roughMarker)' }, '&:hover fieldset': { border: `2px solid ${markerBlack}` }, '&.Mui-focused fieldset': { border: `2.5px solid ${pink15}` } } }} />
                 </Box>
                 {error && <Typography sx={{ fontFamily: '"Inter", sans-serif', fontWeight: 800, color: pink15, fontSize: '0.8rem' }}>{error}</Typography>}
                 

@@ -141,7 +141,7 @@ const PhotoUpload = () => {
                 El álbum en vivo de la fiesta
               </Typography>
               <Typography sx={{ fontFamily: '"Inter", sans-serif', fontWeight: 600, fontSize: '0.95rem', color: paperCream, lineHeight: 1.5, maxWidth: '380px', mx: 'auto', textShadow: '1px 1px 2px rgba(0,0,0,0.5)' }}>
-                Conviértete en la cámara táctica de la noche. Sube aquí tus mejores fotos y videos para el archivo oficial de los 15 de Anahy.
+                Conviértete en la cámara táctica. Sube aquí tus mejores fotos y videos para el archivo oficial de los 15 de Anahy.
               </Typography>
             </Box>
 
